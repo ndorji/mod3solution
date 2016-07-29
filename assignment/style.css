@@ -1,98 +1,82 @@
 body {
-	font-size: 16px;
-	color: #fff;
-	background-color: none;
-	font-family: 'Oxygen', sans-serif;
+  padding-top: 20px;
+  background-color: none;
 }
-
-/* HEADER */
-#header-nav{
-	background-color: #f6b319;
-	border-radius: 0;
-	border: 0;
+p {
+  text-align: justify;
 }
-
-.navbar-brand {
-	padding-top: 25px;
-}
-
-.navbar-brand h1 {/* Restaurant name */
-	font-family: 'Lora', serif;
-	color: #557c3e;
-	font-size: 1.5em;
-	text-transform: uppercase;
-	font-weight: bold;
-	text-shadow: 1px 1px 1px #222;
-	margin-top: 0;
-	margin-bottom: 0;
-	line-height: .75;
-}
-
-.navbar-brand a:hover, .navbar-brand a:focus {
-	text-decoration: none;
-}
-
-/* END HEADER */
-
-/* FOOTER */
-.panel-footer {
-	margin-top: 30px;
-	padding-top: 35px;
-	padding-bottom: 30px;
-	background-color: #222;
-	border-top: 0;
-}
-
-
-
-/* MENU CATEGORIES PAGE */
-.category-tile {
-	position: relative;
-	border: 2px solid #3F0C1F;
-	overflow: hidden;
-	width: 200px;
-	height: 200px;
-	margin: 0 auto 15px;
-}
-.category-tile span {
-	position: absolute;
-	border: 2px solid #3F0C1F;
-	bottom: 0;
-	right: 0;
-	width: 100%;
+h3 {
 	text-align: center;
-	font-size: 1.2em;
-	text-transform: uppercase;
-	background-color: red;
-	color: black;
-	opacity: .8;
-}
-.category-tile:hover {
-box-shadow: 0 1px 5px 1px #cccccc;
-}
-#menu-categories-title + div {
-	margin-bottom: 50px; 
-}
-#menu-categories-title {
-	color: black;
 }
 
 
-/********** Large devices only ********/
-@media (min-width: 1200px) {
-	
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  background-color: transparent;
+}
+.jumbotron .btn {
+  padding: 14px 24px;
+  font-size: 21px;
+}
+
+/* Customize the nav-justified links to be fill the entire space of the .navbar */
+
+.nav-justified {
+  background-color: #eee;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.nav-justified > li > a {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 0;
+  font-weight: bold;
+  color: #777;
+  text-align: center;
+  border-bottom: 1px solid #d5d5d5;
+}
+.nav-justified > .active > a,
+.nav-justified > .active > a:hover,
+.nav-justified > .active > a:focus {
+  background-color: #ddd;
+  background-image: none;
+  -webkit-box-shadow: inset 0 3px 7px rgba(0,0,0,.15);
+          box-shadow: inset 0 3px 7px rgba(0,0,0,.15);
+}
+.nav-justified > li:first-child > a {
+  border-radius: 5px 5px 0 0;
+}
+.nav-justified > li:last-child > a {
+  border-bottom: 0;
+  border-radius: 0 0 5px 5px;
 }
 
 
-/********** Medium devices only ********/
-@media (min-width: 992px)  and (max-width: 1199px){
-	
-	}
-	
-
-
-/********** Smallar devices only ********/
-@media (min-width: 768px)  and (max-width: 991px) {  
-	
+@media (min-width: 768px) {
+  .nav-justified {
+    max-height: 52px;
+  }
+  .nav-justified > li > a {
+    border-right: 1px solid #d5d5d5;
+    border-left: 1px solid #fff;
+  }
+  .nav-justified > li:first-child > a {
+    border-left: 0;
+    border-radius: 5px 0 0 5px;
+  }
+  .nav-justified > li:last-child > a {
+    border-right: 0;
+    border-radius: 0 5px 5px 0;
+  }
 }
 
+
+@media screen and (min-width: 768px) {
+  .masthead,
+  .marketing,
+  .footer {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
