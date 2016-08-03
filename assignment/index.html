@@ -1,67 +1,79 @@
-<!DOCTYPE html>
+
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title> Module3 Assignment Solution</title>
-    <!-- Bootstrap -->
+    <title>Module 3 Assignment</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
-  <header>
-  <nav id="header-nav" class="navbar navbar-inverse">
-  <div class="container">
-  <div class="navbar-header">
-  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-   </button>
-   <a class="navbar-brand" href="index.html"><span>Food, LLC</span></a>
-   </div>
-   <div id="navbar-elements" class="visible-xs">
-   <div id="navbar-collapse-1" class="collapse navbar-collapse">
-   <ul id="nav-list" class="nav navbar-nav navbar-right">
-   <li>
-  <a href="#">
-   <span>Chicken</span></a>
-  <hr /></li>
-  <li>
-  <a href="#">
-  <span>Beef</span></a>
-  <hr />
-  </li>
-  <li>
-  <a href="#">
-  <span >Sushi</span></a>
-  <hr />
-  </li>
-  </ul>
-  </div>
-  </div>
- </div>
-  </nav>
+<body>
+<header>
+	<nav id="nav-custom" class="navbar navbar-default">
+			<div class="container">
+				<div id="brand-custom" class="navbar-header">
+						<div  class="navbar-brand">
+							<a href="index.html" class="pull-left"><h1>Food, LLC</h1></a>
+						</div>
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-options" aria-expanded="false">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        </button>
+				</div>	
+				<div class="collapse navbar-collapse" id="menu-options">
+			      <ul class="nav navbar-nav text-center hidden-lg hidden-md hidden-sm" id="menu-list" >
+			        <li><a href="#para-custom">Chicken <span class="sr-only">(current)</span></a></li>
+			        <li><a href="#para-custom1">Beef</a></li>
+			        <li><a href="#para-custom2">Sushi</a></li>
+				  </ul>
+				</div>
+
+
+			</div> <!--Container div end-->
+	</nav>
+
 </header>
+<div id="body-custom" class="container">
+<h2 class="text-center">
+	Our Menu
+</h2>
+<div class="row">
+	<div class="col-xs-12">
+	<div id="para-custom">
+		<h3 class="text-center">
+			Chicken
+		</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+		</div> <!-- content end div -->
+	</div>	
+	<div class="col-xs-12">
+	<div id="para-custom1">
+		<h3 class="text-center">
+			Beef
+		</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+		</div> <!-- content end div -->
+	</div>	
+	<div class="col-xs-12">
+	<div id="para-custom2">
+		<h3 class="text-center">
+			Sushi
+		</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+		</div> <!-- content end div -->
+	</div>	
+</div>
+	
+</div> <!-- End of body container -->
 
-<h1 class="text-center">Our Menu</h1>
 
-<div id="main-content" class="container">
-      <div class="row">
-        <div class="col-md-12 col-sm-12 col-xs-12">
-            <div class="section">
-                <div class="section-title" id="chicken_id">Chicken</div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
-        </div>
-    </div>
- </div>
-          <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-          <script src="js/jquery-1.11.3.min.js"></script>
-          <script src="js/bootstrap.min.js"></script>
-          <script src="js/script.js"></script>
-    </body>
+<!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>	
+</body>
 </html>
